@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Green Valley Homestay",
+    "type": "Homestay",
+    "price": "₹1500 per night",
+    "contact": "9876543210"
+  },
+  {
+    "id": 2,
+    "name": "Tribal Eco Stay",
+    "type": "Tribal Stay",
+    "price": "₹1000 per night",
+    "contact": "9123456780"
+  }
+]
