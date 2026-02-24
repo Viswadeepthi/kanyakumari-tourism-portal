@@ -1,1 +1,14 @@
-
+[
+  {
+    "id": 1,
+    "name": "Mathur Aqueduct",
+    "description": "A scenic aqueduct surrounded by lush green hills.",
+    "location": "Kanyakumari District"
+  },
+  {
+    "id": 2,
+    "name": "Thiruparappu Waterfalls",
+    "description": "A popular waterfall and picnic spot.",
+    "location": "Near Kulasekharam"
+  }
+]
