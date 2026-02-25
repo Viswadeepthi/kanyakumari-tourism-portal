@@ -1,102 +1,147 @@
-/* ===== Base ===== */
+/* Global */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f5f5f5;
+  background: #f5f5f5;
+  color: #333;
 }
 
-/* ===== Header ===== */
+/* Header */
 header {
-  background-color: #2e8b57;
+  background: #2e8b57;
   color: white;
   padding: 20px;
   text-align: center;
 }
 
-/* ===== Layout ===== */
-.stays {
+/* Hero */
+.hero {
+  background: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 650px;
+  margin: auto;
+  color: #555;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin: 20px 10px;
+  padding: 12px 30px;
+  background: #2e8b57;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #256f46;
+}
+
+/* About */
+.about {
+  background: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about p {
+  max-width: 800px;
+  margin: auto;
+  color: #555;
+}
+
+/* Cards */
+.places, .stays {
   display: flex;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
   padding: 40px;
   flex-wrap: wrap;
 }
 
-/* ===== Cards (OLD UI) ===== */
 .card {
   background: white;
-  padding: 20px;
   width: 260px;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* ===== Tribal Border ===== */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+/* Card Images */
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Tribal Highlight */
 .tribal {
   border: 2px solid #2e8b57;
 }
 
-/* ===== Buttons ===== */
+/* Buttons inside cards */
 .card button {
-  background-color: #2e8b57;
+  width: 100%;
+  padding: 10px;
+  background: #2e8b57;
   color: white;
   border: none;
-  padding: 10px;
-  width: 100%;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
 }
 
 .card button:hover {
-  background-color: #256f46;
+  background: #256f46;
 }
 
-/* ===== Back Link ===== */
+/* Map */
+.map {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.map iframe {
+  width: 80%;
+  height: 350px;
+  border: 0;
+}
+
+/* Utility */
+.center {
+  text-align: center;
+}
+
 .back {
   display: block;
   text-align: center;
   margin-bottom: 30px;
-  text-decoration: none;
   color: #2e8b57;
   font-weight: bold;
+  text-decoration: none;
 }
 
-/* ===== MODAL (NEW FEATURE ONLY) ===== */
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-box {
-  background: white;
-  padding: 25px;
-  width: 300px;
-  border-radius: 8px;
+/* Footer */
+footer {
+  background: #ddd;
+  padding: 15px;
   text-align: center;
-}
-
-.modal-box input {
-  width: 100%;
-  padding: 8px;
-  margin: 8px 0;
-}
-
-.modal-box button {
-  background-color: #2e8b57;
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  cursor: pointer;
-}
-
-.close {
-  float: right;
-  cursor: pointer;
-  font-size: 20px;
 }
