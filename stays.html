@@ -4,7 +4,36 @@
   <title>Accommodation & Stays</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<!-- Pre Booking Modal -->
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeBooking()">&times;</span>
 
+    <h2>Pre-Book Stay</h2>
+
+    <input type="text" placeholder="Your Name" required>
+    <input type="tel" placeholder="Mobile Number" required>
+    <input type="date" required>
+    <input type="number" placeholder="No. of Nights" required>
+
+    <button onclick="submitBooking()">Submit Request</button>
+  </div>
+</div>
+
+<script>
+  function openBooking() {
+    document.getElementById("bookingModal").style.display = "flex";
+  }
+
+  function closeBooking() {
+    document.getElementById("bookingModal").style.display = "none";
+  }
+
+  function submitBooking() {
+    alert("Pre-booking request sent successfully!");
+    closeBooking();
+  }
+</script>
 <body>
 
 <header>
@@ -18,7 +47,7 @@
     <h3>Three Oceans Resort</h3>
     <p>Type: Homestay</p>
     <p>Price: ₹1500 / night</p>
-    <button>Contact Host</button>
+    <button onclick="openBooking()">Pre-Book</button>
   </div>
 
   <div class="card stay-card">
