@@ -1,62 +1,8 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>Kanyakumari Tourism Portal</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f5f5f5;
-    }
-
-    header {
-      background-color: #2e8b57;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-      background-color: white;
-    }
-
-    .hero h2 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      color: #555;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 20px 10px;
-      padding: 12px 30px;
-      background-color: #2e8b57;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-
-    .btn:hover {
-      background-color: #256f46;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #ddd;
-      margin-top: 40px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -65,32 +11,25 @@
   <h1>Kanyakumari Tourism Portal</h1>
 </header>
 
-<section style="background:#ffffff; padding:50px 20px;">
+<section class="hero">
+  <h2>Discover Kanyakumari</h2>
+  <p>
+    A one-stop verified platform to explore tourist places
+    and book local & tribal stays.
+  </p>
+
+  <a href="places.html" class="btn">Explore Places</a>
+  <a href="stays.html" class="btn">Book Stays</a>
+</section>
+
+<section style="background:#fff; padding:50px 20px;">
   <h2 style="text-align:center;">About This Platform</h2>
 
   <p style="max-width:800px; margin:20px auto; font-size:17px; color:#555; text-align:center;">
-    Kanyakumari Tourism Portal is a one-stop verified platform designed to help tourists
-    explore the natural beauty, tourist attractions, and local culture of Kanyakumari.
-    The platform also promotes local homestays and tribal accommodations, supporting
-    sustainable tourism and improving tribal livelihood.
+    This portal helps tourists explore the natural beauty, heritage, and culture of
+    Kanyakumari while promoting verified hotels, homestays, and tribal eco-stays.
+    The goal is to boost tourism and support local livelihoods.
   </p>
-
-  <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap; margin-top:30px;">
-    <div class="card">
-      <h3>✔ Verified Information</h3>
-      <p>Authentic and trusted details for tourists.</p>
-    </div>
-
-    <div class="card">
-      <h3>✔ One-Stop Platform</h3>
-      <p>Places, stays, and maps in one website.</p>
-    </div>
-
-    <div class="card">
-      <h3>✔ Supports Local Communities</h3>
-      <p>Promotes tribal and local livelihoods.</p>
-    </div>
-  </div>
 </section>
 
 <footer>
@@ -99,4 +38,3 @@
 
 </body>
 </html>
-
