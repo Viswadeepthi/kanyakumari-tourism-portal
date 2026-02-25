@@ -1,4 +1,4 @@
-/* Global */
+/* ===== Global ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 
-/* Header */
+/* ===== Header ===== */
 header {
   background: #2e8b57;
   color: white;
@@ -14,54 +14,8 @@ header {
   text-align: center;
 }
 
-/* Hero */
-.hero {
-  background: white;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 36px;
-}
-
-.hero p {
-  font-size: 18px;
-  max-width: 650px;
-  margin: auto;
-  color: #555;
-}
-
-/* Buttons */
-.btn {
-  display: inline-block;
-  margin: 20px 10px;
-  padding: 12px 30px;
-  background: #2e8b57;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background: #256f46;
-}
-
-/* About */
-.about {
-  background: white;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.about p {
-  max-width: 800px;
-  margin: auto;
-  color: #555;
-}
-
-/* Cards */
-.places, .stays {
+/* ===== Layout ===== */
+.stays {
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -69,6 +23,7 @@ header {
   flex-wrap: wrap;
 }
 
+/* ===== Cards ===== */
 .card {
   background: white;
   width: 260px;
@@ -83,21 +38,12 @@ header {
   box-shadow: 0 12px 25px rgba(0,0,0,0.18);
 }
 
-/* Card Images */
-.card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-
-/* Tribal Highlight */
+/* ===== Tribal Highlight ===== */
 .tribal {
   border: 2px solid #2e8b57;
 }
 
-/* Buttons inside cards */
+/* ===== Card Button ===== */
 .card button {
   width: 100%;
   padding: 10px;
@@ -106,30 +52,14 @@ header {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 12px;
 }
 
 .card button:hover {
   background: #256f46;
 }
 
-/* Map */
-.map {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.map iframe {
-  width: 80%;
-  height: 350px;
-  border: 0;
-}
-
-/* Utility */
-.center {
-  text-align: center;
-}
-
+/* ===== Back Link ===== */
 .back {
   display: block;
   text-align: center;
@@ -139,13 +69,7 @@ header {
   text-decoration: none;
 }
 
-/* Footer */
-footer {
-  background: #ddd;
-  padding: 15px;
-  text-align: center;
-}
-/* Pre Booking Modal */
+/* ===== Pre Booking Modal ===== */
 .modal {
   display: none;
   position: fixed;
@@ -183,7 +107,6 @@ footer {
   border: none;
   padding: 10px;
   width: 100%;
-  margin-top: 10px;
   cursor: pointer;
 }
 
