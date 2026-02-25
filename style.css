@@ -1,23 +1,92 @@
-/* Stay Card Images */
-.stay-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 6px;
+/* ===== Global ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #2e8b57;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ===== Hero Section (Home) ===== */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.hero h2 {
+  font-size: 36px;
   margin-bottom: 10px;
 }
 
-/* Hover Animation */
-.stay-card {
+.hero p {
+  font-size: 18px;
+  color: #555;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  margin: 20px 10px;
+  padding: 12px 30px;
+  background-color: #2e8b57;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #256f46;
+}
+
+/* ===== Card Layouts ===== */
+.places,
+.stays {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* ===== Card Design ===== */
+.card {
+  background: white;
+  padding: 20px;
+  width: 260px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Smooth Hover Effect ===== */
+.stay-card,
+.card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.stay-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+.stay-card:hover,
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.18);
 }
 
-/* Button Styling */
+/* ===== Tribal Highlight ===== */
+.tribal {
+  border: 2px solid #2e8b57;
+}
+
+/* ===== Buttons inside Cards ===== */
 .card button {
   background-color: #2e8b57;
   color: white;
@@ -26,9 +95,30 @@
   width: 100%;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 12px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
 }
 
 .card button:hover {
   background-color: #256f46;
+}
+
+/* ===== Back Link ===== */
+.back {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #2e8b57;
+  font-weight: bold;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #ddd;
+  margin-top: 40px;
+  font-size: 14px;
 }
