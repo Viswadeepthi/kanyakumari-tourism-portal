@@ -1,96 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Accommodation & Stays</title>
+  <title>Kanyakumari Tourism Portal</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>Accommodation & Stays</h1>
-</header>
-
-<section class="stays">
-
-  <!-- Stay 1 -->
-  <div class="card stay-card">
-    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/673832245.jpg?k=77a533b5c586b18e0267d9002663cf7cfd79170a3a91da9b1718e0992292ad87&o=">
-
-    <span class="badge available">Available</span>
-
-    <h3>Three Oceans Resort</h3>
-    <p>⭐ 4.4 / 5</p>
-    <p>📍 Near Beach</p>
-    <p>Type: Homestay</p>
-    <p>Price: ₹1500 / night</p>
-
-    <button onclick="openBooking()">Pre-Book</button>
-  </div>
-
-  <!-- Stay 2 -->
-  <div class="card stay-card">
-    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/803530696.jpg?k=97feb742b8e979f92a7ae87ed12dbc44a0f4cb56bdcb97e8188aaf566d4b8b29&o=">
-
-    <span class="badge limited">Limited</span>
-
-    <h3>Amaari Beach Resort</h3>
-    <p>⭐ 4.6 / 5</p>
-    <p>📍 City Center</p>
-    <p>Type: Resort</p>
-    <p>Price: ₹3000 / night</p>
-
-    <button onclick="openBooking()">Pre-Book</button>
-  </div>
-
-  <!-- Stay 3 -->
-  <div class="card stay-card tribal">
-    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/398593854.jpg?k=812280ea0d093373a640b1bc91822c305428183724eae94638526ce1fd34ea95&o=">
-
-    <span class="badge available">Available</span>
-
-    <h3>The Coral Kanyakumari</h3>
-    <p>⭐ 4.2 / 5</p>
-    <p>📍 Sea View</p>
-    <p>Type: Hotel</p>
-    <p>Price: ₹1000 / night</p>
-
-    <button onclick="openBooking()">Pre-Book</button>
-  </div>
-
-</section>
-
-<a href="index.html" class="back">⬅ Back to Home</a>
-
-<!-- ===== PRE-BOOKING MODAL (UI ONLY) ===== -->
-<div id="bookingModal" class="modal">
-  <div class="modal-box">
-    <span class="close" onclick="closeBooking()">×</span>
-    <h3>Pre-Book Stay</h3>
-
-    <input type="text" placeholder="Your Name">
-    <input type="tel" placeholder="Mobile Number">
-    <input type="date">
-    <input type="number" placeholder="No. of Nights">
-
-    <button onclick="submitBooking()">Submit Request</button>
-  </div>
+<div class="gov-bar">
+  Government of Tamil Nadu | Kanyakumari District Tourism Portal
 </div>
 
-<script>
-  function openBooking() {
-    document.getElementById("bookingModal").style.display = "flex";
-  }
+<header>
+  <h1>Kanyakumari Tourism Portal</h1>
+</header>
 
-  function closeBooking() {
-    document.getElementById("bookingModal").style.display = "none";
-  }
+<section class="hero">
+  <h2>Discover Kanyakumari</h2>
+  <p>
+    A one-stop verified platform to explore tourist places
+    and book local & tribal stays.
+  </p>
 
-  function submitBooking() {
-    alert("Pre-booking request sent successfully!");
-    closeBooking();
-  }
-</script>
+  <a href="places.html" class="btn">Explore Places</a>
+  <a href="stays.html" class="btn">Book Stays</a>
+</section>
+
+<section class="stats">
+  <div>🏨 50+ Verified Stays</div>
+  <div>🏞️ 25+ Tourist Attractions</div>
+  <div>👥 10K+ Annual Visitors</div>
+</section>
+
+<section class="contact">
+  <h2>Tourism Office Contact</h2>
+  <p>Email: tourism@kanyakumari.gov.in</p>
+  <p>Helpline: 1800-123-4567</p>
+</section>
+
+<footer>
+  <p>Built for Niral Thiruvizha Hackathon</p>
+</footer>
 
 </body>
 </html>
