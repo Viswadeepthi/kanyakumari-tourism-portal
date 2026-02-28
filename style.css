@@ -1,243 +1,188 @@
-/* Global */
+/* ================= GLOBAL ================= */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background: #f5f5f5;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
   color: #333;
 }
 
-/* Header */
-header {
-  background: #2e8b57;
+/* ================= GOVERNMENT BAR ================= */
+.gov-bar {
+  background: #002244;
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 6px;
+  font-size: 14px;
 }
 
-/* Hero */
-.hero {
+/* ================= NAVIGATION ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
   background: white;
-  padding: 60px 20px;
-  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.hero h2 {
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e8b57;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #2e8b57;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+  height: 400px;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.hero h1 {
   font-size: 36px;
+  margin-bottom: 10px;
 }
 
 .hero p {
   font-size: 18px;
-  max-width: 650px;
-  margin: auto;
-  color: #555;
 }
 
-/* Buttons */
+/* ================= BUTTON ================= */
 .btn {
   display: inline-block;
-  margin: 20px 10px;
-  padding: 12px 30px;
+  padding: 12px 25px;
   background: #2e8b57;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  margin-top: 15px;
 }
 
 .btn:hover {
   background: #256f46;
 }
 
-/* About */
-.about {
-  background: white;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.about p {
-  max-width: 800px;
-  margin: auto;
-  color: #555;
-}
-
-/* Cards */
-.places, .stays {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  padding: 40px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: white;
-  width: 260px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.18);
-}
-
-/* Card Images */
-.card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-
-/* Tribal Highlight */
-.tribal {
-  border: 2px solid #2e8b57;
-}
-
-/* Buttons inside cards */
-.card button {
-  width: 100%;
-  padding: 10px;
-  background: #2e8b57;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.card button:hover {
-  background: #256f46;
-}
-
-/* Map */
-.map {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.map iframe {
-  width: 80%;
-  height: 350px;
-  border: 0;
-}
-
-/* Utility */
-.center {
-  text-align: center;
-}
-
-.back {
-  display: block;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #2e8b57;
-  font-weight: bold;
-  text-decoration: none;
-}
-/* Stay card images */
-.card img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 6px 6px 0 0;
-  margin-bottom: 10px;
-}
-
-/* Availability badge */
-.badge {
-  display: inline-block;
-  padding: 4px 8px;
-  font-size: 12px;
-  border-radius: 4px;
-  color: white;
-  margin-bottom: 8px;
-}
-
-.available {
-  background-color: #2e8b57;
-}
-
-.limited {
-  background-color: #d9534f;
-}
-
-/* Modal */
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-box {
-  background: white;
-  padding: 25px;
-  width: 300px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.modal-box input {
-  width: 100%;
-  padding: 8px;
-  margin: 8px 0;
-}
-
-.modal-box button {
-  background-color: #2e8b57;
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  cursor: pointer;
-}
-
-.close {
-  float: right;
-  font-size: 20px;
-  cursor: pointer;
-}
-/* Search & Filter Controls */
-.controls {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.controls input,
-.controls select {
-  padding: 8px;
-  margin: 10px;
-  width: 200px;
-}
-.gov-bar {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 6px;
-  font-size: 14px;
-}
-.contact {
-  background: #f0f0f0;
-  padding: 30px;
-  text-align: center;
-}
+/* ================= STATS SECTION ================= */
 .stats {
   display: flex;
   justify-content: center;
   gap: 40px;
+  padding: 50px 20px;
+  background: #f5f5f5;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  text-align: center;
+  width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.stat-card h2 {
+  margin: 0;
+  color: #2e8b57;
+  font-size: 28px;
+}
+
+/* ================= FEATURED SECTION ================= */
+.featured {
+  padding: 50px 20px;
+  text-align: center;
+  background: white;
+}
+
+.featured h2 {
+  margin-bottom: 20px;
+}
+
+.featured-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.feature-box {
+  background: #f5f5f5;
   padding: 30px;
-  background: #ffffff;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
   font-weight: bold;
 }
-/* Footer */
-footer {
-  background: #ddd;
-  padding: 15px;
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  background: white;
+}
+
+/* ================= CONTACT SECTION ================= */
+.contact {
+  padding: 40px 20px;
   text-align: center;
+  background: #f5f5f5;
+}
+
+.contact h2 {
+  margin-bottom: 15px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #002244;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 }
