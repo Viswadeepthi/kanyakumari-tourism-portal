@@ -10,7 +10,16 @@
 <header>
   <h1>Accommodation & Stays</h1>
 </header>
+<div class="controls">
+  <input type="text" id="searchInput" placeholder="Search stays..." onkeyup="filterStays()">
 
+  <select id="typeFilter" onchange="filterStays()">
+    <option value="all">All Types</option>
+    <option value="homestay">Homestay</option>
+    <option value="resort">Resort</option>
+    <option value="hotel">Hotel</option>
+  </select>
+</div>
 <section class="stays">
 
   <!-- Stay 1 -->
