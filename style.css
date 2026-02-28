@@ -1,11 +1,10 @@
-/* ===== Base ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #f5f5f5;
 }
 
-/* ===== Header ===== */
+/* Header */
 header {
   background-color: #2e8b57;
   color: white;
@@ -13,7 +12,37 @@ header {
   text-align: center;
 }
 
-/* ===== Layout ===== */
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin: 15px;
+  padding: 12px 25px;
+  background-color: #2e8b57;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Cards Layout */
+.places,
 .stays {
   display: flex;
   justify-content: center;
@@ -22,7 +51,7 @@ header {
   flex-wrap: wrap;
 }
 
-/* ===== Cards (OLD UI) ===== */
+/* Card */
 .card {
   background: white;
   padding: 20px;
@@ -31,28 +60,12 @@ header {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* ===== Tribal Border ===== */
+/* Tribal Highlight */
 .tribal {
   border: 2px solid #2e8b57;
 }
 
-/* ===== Buttons ===== */
-.card button {
-  background-color: #2e8b57;
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.card button:hover {
-  background-color: #256f46;
-}
-
-/* ===== Back Link ===== */
+/* Back Link */
 .back {
   display: block;
   text-align: center;
@@ -62,41 +75,10 @@ header {
   font-weight: bold;
 }
 
-/* ===== MODAL (NEW FEATURE ONLY) ===== */
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-box {
-  background: white;
-  padding: 25px;
-  width: 300px;
-  border-radius: 8px;
+/* Footer */
+footer {
   text-align: center;
-}
-
-.modal-box input {
-  width: 100%;
-  padding: 8px;
-  margin: 8px 0;
-}
-
-.modal-box button {
-  background-color: #2e8b57;
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  cursor: pointer;
-}
-
-.close {
-  float: right;
-  cursor: pointer;
-  font-size: 20px;
+  padding: 15px;
+  background-color: #ddd;
+  margin-top: 40px;
 }
