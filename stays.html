@@ -14,32 +14,60 @@
 <section class="stays">
 
   <div class="card stay-card">
-    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
     <h3>Green Valley Homestay</h3>
     <p>Type: Homestay</p>
     <p>Price: ₹1500 / night</p>
-    <button>Contact Host</button>
+    <button onclick="openBooking()">Pre-Book</button>
   </div>
 
   <div class="card stay-card">
-    <img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb210a9">
     <h3>Sea View Resort</h3>
     <p>Type: Resort</p>
     <p>Price: ₹3000 / night</p>
-    <button>Contact Hotel</button>
+    <button onclick="openBooking()">Pre-Book</button>
   </div>
 
   <div class="card stay-card tribal">
-    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267">
     <h3>Tribal Eco Stay 🌿</h3>
     <p>Type: Tribal Stay</p>
     <p>Price: ₹1000 / night</p>
-    <button>Contact Host</button>
+    <button onclick="openBooking()">Pre-Book</button>
   </div>
 
 </section>
 
 <a href="index.html" class="back">⬅ Back to Home</a>
+
+<!-- PRE BOOKING MODAL -->
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeBooking()">×</span>
+
+    <h2>Pre-Book Stay</h2>
+
+    <input type="text" placeholder="Your Name">
+    <input type="tel" placeholder="Mobile Number">
+    <input type="date">
+    <input type="number" placeholder="No. of Nights">
+
+    <button onclick="submitBooking()">Submit Request</button>
+  </div>
+</div>
+
+<script>
+  function openBooking() {
+    document.getElementById("bookingModal").style.display = "flex";
+  }
+
+  function closeBooking() {
+    document.getElementById("bookingModal").style.display = "none";
+  }
+
+  function submitBooking() {
+    alert("Pre-booking request sent successfully!");
+    closeBooking();
+  }
+</script>
 
 </body>
 </html>
