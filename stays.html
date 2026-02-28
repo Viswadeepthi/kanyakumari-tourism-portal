@@ -87,18 +87,21 @@
 </div>
 
 <script>
-  function openBooking() {
-    document.getElementById("bookingModal").style.display = "flex";
-  }
+let bookingCount = 0;
 
-  function closeBooking() {
-    document.getElementById("bookingModal").style.display = "none";
-  }
+function openBooking() {
+  document.getElementById("bookingModal").style.display = "flex";
+}
 
-  function submitBooking() {
-    alert("Pre-booking request sent successfully!");
-    closeBooking();
-  }
+function closeBooking() {
+  document.getElementById("bookingModal").style.display = "none";
+}
+
+function submitBooking() {
+  bookingCount++;
+  alert("Pre-booking request sent successfully! Total Requests: " + bookingCount);
+  closeBooking();
+}
 </script>
 <script>
 function filterStays() {
