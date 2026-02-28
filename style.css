@@ -227,6 +227,14 @@ header {
   padding: 30px;
   text-align: center;
 }
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+  background: #ffffff;
+  font-weight: bold;
+}
 /* Footer */
 footer {
   background: #ddd;
