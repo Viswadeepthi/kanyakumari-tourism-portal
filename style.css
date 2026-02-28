@@ -1,4 +1,75 @@
-/* Pre Booking Modal */
+/* ===== Global ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* ===== Header ===== */
+header {
+  background: #2e8b57;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ===== Layout ===== */
+.stays {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: white;
+  width: 260px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+/* ===== Tribal Highlight ===== */
+.tribal {
+  border: 2px solid #2e8b57;
+}
+
+/* ===== Card Button ===== */
+.card button {
+  width: 100%;
+  padding: 10px;
+  background: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.card button:hover {
+  background: #256f46;
+}
+
+/* ===== Back Link ===== */
+.back {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2e8b57;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ===== Pre Booking Modal ===== */
 .modal {
   display: none;
   position: fixed;
@@ -18,6 +89,10 @@
   width: 300px;
   border-radius: 8px;
   text-align: center;
+}
+
+.modal-content h2 {
+  margin-top: 0;
 }
 
 .modal-content input {
