@@ -100,6 +100,26 @@
     closeBooking();
   }
 </script>
+<script>
+function filterStays() {
+  let search = document.getElementById("searchInput").value.toLowerCase();
+  let type = document.getElementById("typeFilter").value;
+  let cards = document.querySelectorAll(".stay-card");
 
+  cards.forEach(card => {
+    let name = card.querySelector("h3").innerText.toLowerCase();
+    let cardType = card.getAttribute("data-type");
+
+    let matchesSearch = name.includes(search);
+    let matchesType = (type === "all" || type === cardType);
+
+    if (matchesSearch && matchesType) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+</script>
 </body>
 </html>
